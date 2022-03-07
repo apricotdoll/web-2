@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.clerfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+header h1 {
+  width: 120px;
+  float: left;
+  margin: 0;
+}
+
+#gloval-nav ul {
+  float: right;
+  font-size: 1.3rem;
+}
+
+#gloval-nav ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+#gloval-nav ul li:first-child {
+  margin-left: 0;
+}
