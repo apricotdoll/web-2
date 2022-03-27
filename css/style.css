@@ -17,21 +17,26 @@ header {
   height: auto;
   margin: 0 auto;
   padding: 40px 0;
+  display: flex;
 }
 
 header h1 {
   width: 120px;
-  float: left;
   margin: 0;
 }
 
+#gloval-nav {
+  flex-grow: 1;
+}
+
 #gloval-nav ul {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   font-size: 1.3rem;
+  list-style-type: none;
 }
 
 #gloval-nav ul li {
-  display: inline-block;
   margin-left: 1em;
 }
 
