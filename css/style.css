@@ -17,11 +17,11 @@ body {
 header {
   width: 1000px;
   height: auto;
-  margin: auto;/*0 autoでも表示されますが、fixedで余白がなくなっているので正しく修正しましょう*/
+  margin: 0 auto;
   padding: 40px 0;
   display: flex;
   position: fixed;/*headerを固定します。*/
-  inset: 0;/*left: 0とright:0でも可*/
+  inset: 0;
   z-index: 99;
 }
 
