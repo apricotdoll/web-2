@@ -17,14 +17,18 @@ body {
 header {
   width: 1000px;
   height: auto;
-  margin: 0 auto;
+  margin: auto;/*0 autoでも表示されますが、fixedで余白がなくなっているので正しく修正しましょう*/
   padding: 40px 0;
   display: flex;
+  position: fixed;/*headerを固定します。*/
+  inset: 0;/*left: 0とright:0でも可*/
+  z-index: 99;
 }
 
 header h1 {
   width: 120px;
   margin: 0;
+  fill:#fff;
 }
 
 #gloval-nav {
@@ -36,6 +40,7 @@ header h1 {
   justify-content: flex-end;
   font-size: 1.3rem;
   list-style-type: none;
+  color: #fff;
 }
 
 #gloval-nav ul li {
@@ -44,4 +49,19 @@ header h1 {
 
 #gloval-nav ul li:first-child {
   margin-left: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url(/images/hero.jpeg) center /  cover;/*background-size: cover;と別書きでもok*/
+}
+
+main:after {
+  content: "";
+  display: block;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
 }
